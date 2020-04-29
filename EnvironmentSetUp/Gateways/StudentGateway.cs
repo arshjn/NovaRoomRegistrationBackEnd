@@ -86,15 +86,15 @@ namespace EnvironmentSetUp.Gateways
                         bf.BuildingName = "GDW";
                         bf.FloorNum = 3;
                         list.Add(bf);
-                        bf = new BuildingFloor();
+                        /*bf = new BuildingFloor();
                         bf.BuildingName = "GDW";
                         bf.FloorNum = 4;
-                        list.Add(bf);
+                        list.Add(bf);*/
                         
                         //Commons
-                        for (int i = 1; i <= 5; i++)
+                        for (int i = 1; i <= 2; i++)
                         {
-                            if (i != 4)
+                            //if (i != 4)
                             {
                                 bf = new BuildingFloor();
                                 bf.BuildingName = "COM";
@@ -106,7 +106,7 @@ namespace EnvironmentSetUp.Gateways
                     else if (student.RazorsEdge == true)
                     {
                         bf.BuildingName = "COM";
-                        bf.FloorNum = 4;
+                        bf.FloorNum = 3;
                         list.Add(bf);
                     }
                     break;
@@ -114,7 +114,7 @@ namespace EnvironmentSetUp.Gateways
                     if (student.RazorsEdge == true)
                     {
                         bf.BuildingName = "COM";
-                        bf.FloorNum = 4;
+                        bf.FloorNum = 3;
                         list.Add(bf);
                     }
                     else if (student.RazorsEdge == false)
@@ -127,7 +127,7 @@ namespace EnvironmentSetUp.Gateways
                             return list;
                         }
                             //CLC
-                            for (int i = 1; i <= 4;i++)
+                            for (int i = 1; i <= 3;i++)
                         {
                             if (i == 2)
                                 continue;
@@ -188,15 +188,12 @@ namespace EnvironmentSetUp.Gateways
                             return list;
                         }
                         //Mako Hall
-                        for (int i = 2; i <= 7; i++)
-                        {
-                            if (i == 2)
-                                continue;
+                        
                             bf = new BuildingFloor();
                             bf.BuildingName = "MKH";
-                            bf.FloorNum = i;
+                            bf.FloorNum = 3;
                             list.Add(bf);
-                        }
+
                         //Rolling Hills A
                         for (int i = 1; i <= 3; i++)
                         {
